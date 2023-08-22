@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+
+    <style>
+      .Cart-Container {
+        width: 70%;
+        height: 85%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        /* box-shadow: 0px 25px 40px #073d6333; */
+        box-shadow: 0 0 5px 2px #4ea5ec;
+      }
+      .head {
+        color: blueviolet;
+      }
+      .tab {
+        text-align: center;
+        float: left;
+        position: relative;
+        margin-left: 5%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .reg2 {
+        color: blue;
+      }
+      .card {
+        height: 325px;
+        padding: 5px;
+        margin-left: 2px;
+        width: 300px;
+        margin: 0%;
+        border-radius: 5px;
+      }
+      img {
+        border-radius: 5px;
+        margin: 0%;
+      }
+      .cardpard {
+        padding: 5px;
+      }
+      .heading {
+        align-items: center;
+        font-size: 28px;
+        color: red;
+      }
+      .reg {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee class="heading"
+      ><h3>Free Available courses for Fourth Year 2 semester</h3></marquee
+    >
+    <div class="tab">
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>Spring Boot</h3>
+          <img
+            src="data:image/png;base64,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"
+            alt="Avatar"
+            style="width: 120px; height: 100px"
+          />
+          <div>
+            <p>Basics of Spring Boot</p>
+            <a href="Cform" class="reg2"> Register</a>&nbsp;
+
+            <form action="/Cregister/C Lang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="C Lang"
+              />
+              <a href="Cregister/C Lang" class="reg"> Registered students </a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>Cyber Security</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9KM5pKN4Sj8A4le_gYqKj4xXyhZet3ZwBQ&usqp=CAU"
+            alt="Avatar"
+            style="width: 120px; height: 100px"
+          />
+          <div>
+            <p>Basics of Cyber Security</p>
+            <a href="Cplusform" class="reg2">Register</a>
+            <form action="/Cregister/C++ Lang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="c++ Lang"
+              />
+              <a href="Cregister/C++ Lang" class="reg">Registered Students</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>AI</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZT88cWq8te5FU0_jeFnReMVZ5hTPBCHvXg&usqp=CAU"
+            alt="Avatar"
+            style="width: 120px; height: 100px"
+          />
+          <div>
+            <p>Basics of Artificial Intelligence</p>
+            <a href="pythonform" class="reg2">Register</a>
+            <form action="/Cregister/pythonLang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="pythonLang"
+              />
+              <a href="Cregister/pythonLang" class="reg">Registered students</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>Robotics</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5tbF4TvwPk9cFeyVj6IxsIadWYNDhHNseRw&usqp=CAU"
+            alt="Avatar"
+            style="width: 200px; height: 100px"
+          />
+          <div>
+            <p>Basics of Robotics</p>
+            <a href="javaform" class="reg2">Register</a>
+            <form action="/Cregister/javaLang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="javaLang"
+              />
+              <a href="Cregister/javaLang" class="reg">Registered students</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <br />
+      </div>
+    </div>
+    <div class="tab">
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>IOT</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhUuFOaiSc-r-9YsHi_iquLDAbk4vmyDCuA&usqp=CAU"
+            alt="Avatar"
+            style="width: 150px; height: 100px"
+          />
+          <div>
+            <p>Basics of Internet of things</p>
+            <a href="htmlform" class="reg2">Register</a>
+
+            <form action="/Cregister/htmlLang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="htmlLang"
+              />
+              <a href="Cregister/htmlLang" class="reg">Registered students</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="Cart-Container">
+        <div class="card">
+          <h3>PostgreSQL</h3>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC6CAMAAAAwGZdwAAAAmVBMVEX///8zZ5EAAAAmYI0wZZAqYo4fXYv29vb7+/vw8PAbW4rS0tLs7Ozo6OgAUYTb29vHx8cVFRWjo6Otra0NDQ0iIiJVVVUuLi66urri6O6MjIzw8/bAwMCzs7N3d3dERERra2thYWE7Ozubm5t6mLLM1uBGc5lmiaimuMpRep6CgoK/zNnW3+dbgaOHobmTqsCywtEASH8APnnIUHeXAAAW2ElEQVR4nM1dCZequBLWJizigrsC7b6LivP+/497pKoCYQ99e65T58ycvt0IH5VK7Slbrb9PltnpOcOJt54vRqPp19fXaLbf3Q/Lbr9jWh/Ak5DZ6ztA/b4pQTH73e/DdvFVTIutF0H/jac73eFkfOA0Ho9XXadT9wlnOD546+18voloPt+t13fvMOk6Zu/7sJ7PSgALmu28yR/hdib37XyzX0zjW472m/lu6026ZslHht5uU8TI6SLCXwdYXLvZfv8MsDncjqYVN56tl30rLYJmd62GCu8wGs0EjfKPOpSxpZR6XW+k8NzRetLtC+D9SZmoZmkfLVa08YZODz9r9p3u8rDe7uapO3jdJtuyt9wpPj6ijbfisuIc9un3icRht5tvFrP02+/XkXj3i7lo9r/H901y7cxzlDFP0pDnd2+yWi0jWq1Wh/UuDQ6AbA8H6Vlf2/Fy2OV6g2uQbne4mtzn+IKHYd0+Np1vaZH3h9ptD9TfSNtuPeS6U14l0+x0Ot+HXZkojDynk+djpJr747GjJqZWZ5iwba+wJc2DuHoxn/QqL3XGWT0x3a8bKSsrItOP1LiVE96OFy/dro7Zzpau3HhDhaea3TEtPMjRWBmy756C4HoNw9fxcjy+wus1OD1cX76kdxB33g8rN+RQXDdW3wH9b7z7QtkkWKfj5dnW7IgMQ9M0wzCiH/Xz8xi+T/KdxySos0MVZlrtXRqy7z+C9/t9fb+Dk+vn39rqOd5oLX/GegRhBIzT5fi6vh8pHrb80/MfnbXTxJiuGez8fD0k2MTE6a4U8/csK/qWeQovZ86HhCNa+/YKXLPUtTEfIf+EpguKPmcb7cvblSX39NT1dp4YY5p9vibvuCQ+bkr2F/E5YbMbHNsDW2Msc1/NGAy0Wxg83Bxw6xFGHymAw7TB4Bae3OTK99PIMltca9vhQygah4zsvFBgHdyua7FXH+HNLrttdGPdttuX8P2QcVun0LBLP9LWjcEzPMUfcEOtiNkIu/0S0m16FagR853e0H3dihiWRcHOl1cMo/dqG3Wf0NqXQFxvBefS65lxfgkhmZASyW901HVrumHQzm2U4nszffBqic9oCp9hun4LxEP9S/nCMO0sriPB3WQV9hK0y44cmNc/SpDh1kdaxddA8SNtfXCLperKtPJ7DwSzu3uUkDRqFOg9blH3UrfKCRkXq/Fn2pGODsWWDM7lqNv2hfRfd5ESXpQuFHY0gu6z4jYZ0p/4cP/ZBHNExlOs/eNW8Tjt/E5JiCczGjS0h0y7qT+ftfHRVoPPCDjsKAS7fDtGXNEJ9Qp3YzcBfQeJwd3ZhGdGiI+tYlYZRfpBiEjVx9ngiheNEXXCaP6v0Qp+Dhtg1m7I52NjPuPHhXowL1UvbV+thLNfsRsC6m4OQn5qq+qNiAzcJtdahV5COiMuulWoGUMJMReyPTdB3S3hx2ODhbZROB7sp6AjEQlJrm8V99DbaB2/wXea4CfA4szgx6DBQrM2ymTV82opRl1h/iPUoK9N0Mt3EBYL/L8x/LqBtmtruLZXZaNSSPYLJfZR6PURGbdEg2zAB0HFDarj1AAAqWj3jyC3E16/WQWvbdiy3WlsTUCXbGEbVu7iLGh8WPgnwoGoccWsV8XD9Qu/pA/xLhdq6y5+all2k4cBox+3BtqmmJgR1G5GduNSbd6FDQS3YwSW5toANDpKVtjoPUsQ6YjarfIsg1godpFQDOEHEOlLg6UegI52z38sHRHpN9RD71IOkK4GPbfo0JYER8Q/qy+1fq55TCMyjqjHyl1FHQQfothpjxy8MVpDdSLD8kc6Wr4dbsZHqT3GbY++Xq9l8h25+G5ojtkAt+Gf6WiJBuQRlK2c8UpAO63OKFbYVTonQ9oFbNTrZ55SAbEzCIhftq00AI0RjNPqx3GM38DvoOVs4l3VEApt660E2oljQ/fZQDzAhTn9GqM5q+GWVskuMVKguxCEg4CqKw8y4a9f2oYEy6rYJlooy/QqBt1AeeAD/AZLU0/MRge02GeTtUe/dYjVdKAu0ui8N1gaFdKewOpToQKR9HSk8rzY8wgaGIqg1i/7AQ1OqECKmIdsWnFVN+oA6OmqmXVjaHabhJMqpN9KraxsxmcdCBen381A689ylvwJobtXrMVOscMU6WeeSR2BX31VZpwOHp77WzY8c98iF51hugFkeW22dgloZU6j235Sy1E2INLVQdFfuAXurMmf/hFovHdVLNoIq27YA6B/QLF18oEFA3GPI5fdD8TDdlMvyWsDvOYT/dec+Uy39Uv4Dh59330EmOs+5uQDwy0HDOL3z0AbPKC00FuKgujz8xg8XJ/Xk163dqPdqeu3l1zQQnrnkKBAdkWalIvJdNlIe7A2v5znspjNLmHgSs+zgmNpUSJPhlwTSsjNIUFruYR8tEMZsmbGBfVpFIfa7fCUe6gfKDPbuDyyny4DDY85iMjQi7N6ytklDQTMHxjXfHkLnlmVJ5fvcyxic0SPLGjGYBXXpPEQ/Z3/Tjn3iKGW/0o/UqoSqoW7+kV8wvddXnR+BwFW4nLuB1ozzEAehJxs4f1U/R+KACSJcE/BNQyvgajMBirvr9HF7vvG1R2vOtv/A2udE1R8IsQrIMrd5kGA/U5x+HQ9RuId6Tvbbh9RFVh5pVX26v71PBi0n5ebxmUK0185QcUIEvi74JrOaR5uDYIEsn+9tA1NZ8xGbp0prK51AJmOjD4ag8vJdaPF4q4Mgs4qX4ZZ03UMtZdkIlXD1AS0eWQa2BPWDh+ue3oxg7JFtatGgcp1oL3j2qUI48IM9/QLiPoiluTOvnEKYUDmwA0HVIdmbaG7rhq6rXX5V0rg+bb+FPs5gsrOcJ9sGIeSZH4lKel1rKjfaphJwqz3TdovsSa5/gNozDrQ+JqR7aPiRCuI9ADFntk8ApoWKARgecs6xIpaVX0gp09y7ZzFEhP8g/5ljdaj9F20YXW0ilf+AdTcVsZhomuxUIRPgT0JpVBfMW2L2iMlAOxG8mFdNIM2WDXoS8xTpp2Pkf7hz0ZBdzPMM9AIQcFig4+RsqaKOg9Bp2N9rR1E7235kcgMoP5U48loCBqfyHRqBTAKA2aMD7FgMUbQ4O/NQFQU82K4L9y01Or25X196ZpQLjU7EUFbz4wgXIUakTGfk1Dri9onejvy95T9PKySuFlUWmRf4M+QDHJrZFrmdEKoptO/JP0CIj0j9Wgmfl4ORwloQOWXXYwOe2VlkG+uR15PEE8zMaIOj3NApO/CXQH1gd0pKl0monLhly8Lv1dNGZWxAnyYmshWjDRJ4cXNgpABWYDNUYuviZVloNFA11Vj0HKmXSMUhMzrYhIYNfM+7mPCyAu2vFrZh0CXlxqANfmYKUW4m3up1i79CZo3nU9BYextYs2MQj2PGa9W/KQgoHT5sUUjqJY1KrOkbBB62G5a0NH+Ol+SwuO0jXOQ5dxLgcYEU2nkjRnOU/X+IM8t5aThEqZdZAY7BDfeXmpROcSmxlQyLwS6lJOYKKpzCpCDKRNVxGmqSAGjt1J0142NuqXkndbJNGqXR82uRjSW/Gr6Mw9aeyQQU32y8Bsnv5srQZWrvKJVzhMmIlJ7H7VHKhihihS4orNUD2Ri1U9K4lELumA/5QmreidJf5CelkGjN2KCgtvLmDGNsFNhD96o2iJGoIFhdaDRG5AVHMYAsnGhqABMydckBRocvQ3XgaZKD1WJ79EUNLthwJVs6LwZRxNOPaXpEwW9RJ9cFRy9Itc0BTovmsUU4IZlmd8kDhP1/WElbpvC3LL4L6cg1AW54RLQ5YZIFTQWNKUcKUOz9I6zJlTHHaf9Dlmowby4CtELOszBn4qHCHceiZWibP1Z/BvVIjrPuV51KXpRSLOgWSh3vhW1R9wIlGxF3C2JWRpYMbqv3GEG6DVddNMCVQ4aVGe5c6Wmp/mF0OQj7Y5MjIhqCpX0opsF3YPtCVnqR+32YZBTr4hcyYwrCBomlBJWYzQeB9g2LGkHGL3OnUbCThXs6q19ko6qqtxKo55SScJS5TDe07gbRBBmYGLpkHXwBE0SUa/f9JiiLcdErqlK/QX3tClcnlSyhqFfbn3FViRD3U3iftT51Bp6wuVeii6SR/UkWE0cECkc4Bu5HXiMwctjbnVAq0C1ubLrkxPuFqvi3eDvakVojLqEu0FWGzQYVZYxRPkqPHR2j92P2pQN9U2UgqbARq1fjqSY2jYowwfOh34DoMtZgTUk+h7FibK6IiglaUtBo8F0FYshlH9EVsugyb9bJ35zjrCeAZYyV6bJgkaZLj1thGpctdeWJBeFUgJNYRYalrVVCBrTe9BhU2cVarQHSod6IxkVQ16cVSI/rYloHRthp2VnI8Ep2atsIdLTZTJLIJQbWHSo1aM4kTcSbUSKezEIX5ed/YTSEeYh3zWJJht0ZonoM4Zt1epthlQx4vdLEsD0S7DU2ENTSDPJ06uWj4I4WoIQYk2+QdcNxl1c3WhHypOTpDu5IDxDh+TvNUaRip+FQk1ue/EfS4iOf70ZnWuIHCY6koMRSzmjMUrH8KWm+MKgo7dY9EnvljUyFt8Pe33Mp476LxB3GcLqLyqOBff2cfBY1+eP/R6novXAtLjVpBObhzAYLRqoPEJdA/BYC69iNOUlcaPWPBPbEYuCYGzbUSszy6+KRT70af2jDSksyu7ui8DGBNcswPbUlATYzURoOUJxN5t2+xpHVEgYMZ9xZ6I/lAsN04S5dogErEElp8TBpDyr0RrWF5mzhO5+C/cDnSVdouqoPp+P1gcPf9a03NFG8dsZMSJPs/npBuMSwzAvdFIJHIvRshJz5LmOYiewxqlmZPbczIqgT2/9oJ1zEPfYnOgs37hORyN1NnFcU6dnye5FLmU6l+wrvHEh0RpFdMNV7AMHZ/UTGdbxbq09v2LTuc1ATuWT0/qjDmU6CRYxGoNdLCqvazGTH+ggC2tItNc8pLI+hiFq5YQs6aijWwFyA+1KccCSoSQcq+9+ZdRA4R8H5GBRWKqSDiwgasOy4P8dNOCUJ+0ND7vdfL7bTopeAjIJeDq79tF6Oz6P/GS6Hm0+Ou/WzBomJLdG4THgfb+3Omz38uCgAnkB/xQP22ZbAYpQx72LwfF51m0DE5M/7V9ng/h+/fJZSptc5AUndaiWW5+plVnjnt7XK7WgGj9ktThKir2k6qixIQtcveLefImMsEiHWtfj8Wb/pOGXDbT0GfES2mXzNli9xRRUTShgvFqFxKfnuFe9cX+vxq5i0MkwKx17b9nvdMQ8rZzuhq24h61YHU8bpKi782HRkBPr2BA1xSpE3cMW9MVuex93E5VRWBIQJ0mgeazscA+QTT2XfGnm42F+9Ib1agTaSGEuJXCfp7lnwR5YwM8VRUWDBjf0cZTJaHc/rL7TGeQmR8Hi1sI6GiY5JZkw3wfPLx8/oYk+q30id6MpbWuxTx7nkk8XkFBE/jWeRtEENHqE2JT1LgGtn085zCIsMl8DO0Tc6qymgMc6DmzdvpwyY5Msy/dpxoxXKB7iAAxIdUkSkRLHLXMrY8ZkbORpMWajgOZ7t8uIPC0cxqIPzuH79Hi4nB6P0zs8tmllcXZKwVAmE1wVrBYEhaDJmRZje5CovIAhetPjipSzFJ6Wzqc9nfnkqdtZ1+wBoyZ8euIkDxq9b0qfFblN1MzQOsjalKaW0TES/QyvoBoqMjyDIrs7jDGYPMUimxM34dPYrqJxYA52zwIKPx8s2i/kacpsUUUkLqZhrKh+NAJAFxxvZLqReDiT1LMyNJH2VS5jJxr5hwLvYn4XJsqNR6L84zYBLRcAUoD18yVuMBdD8XbFc9dwDNkMWJ1Nbohz6V1M/my98TB2Bfz4Wppt0RB0yE/36CAXfIhZ+/K6JgO1xLiuWa6eKFgNsnPHFU/ZRWYnRmV2X3ZlC+4nR9XJ81E9WEUZXv8URi7uuX2+XY4hnxgnab6xmPlXHjTupb0oN+gzCuC4Czvupb0taTSR2KqqoMXytSzTR8rMiOvGkwQrhitiinWD0pM0SotJC5Gtz5TX/cdlEF8lJnYo5z8oLV1CZgJ5UTl7EAWIevfeNChJF03lB6kVMXoF93R92vF6sMRnVQWtlXtLlvOdmLBt9bxEbDgU2uV0sbVIyQvjPZFqkW5wfT3bUtO61r7GS6uqp6mcmiM+YlIaPTqui80xkTYiEfKDy/l5pTWMnBYa0fMIwWRJO1Uf3KRDb6rlAMzCOgfJM+93J952vpdMwbxMbUjklW3WbrIE7sWGMy7cgMEMR+2ZOqenDFqcr56ORqPFYjbKj+5VGW8ae0OjVWblqLAnZgFejxGzAXSkqMI4Iec0KbzIR5ULaTqvGrcpUx/XZuTJesIk4z1L0vPRPuSzOFNqdTjrNeE0ZlAOJZAX95Xa7FtOXSFMiYgko5oXVcs1XmA+S5XTuMMLQY/Wq9JR14UkguLZfMU1dudbHno9LV0xhw/7bQYaGh/vORbvoqC28RRqmmKIIHNMmK0KJjJ3ulKrgyroW3y+er+NovDtmk+Fb4w2Rr3NQeVJCDFWeOEthxJw0xnGLkIT0DQZir+t6oarpJ6XwxzpSymZMpuvPW88iejgrSVD0AQ0Fj8hT/QroFtWYviRwCx1N+lfTiNK/6YRaLAt4OwWO/g/IGc3Q10/nW3GJAzWuGZ+eiPQYFvAABSFfz8kczjx7vfDRPZXOt68eFT8YjsVoBV9D+zOW/4y6GLqLw+77OD/0XY8bI2aggZDyuPpUVVJ+beIf4XFfb6Hps/N7j4eQrKwKacNOMzD1XSlyfpNskxBwoxz0A3O+jCdXwu+zl7Bk/uXiDPeUQeNs9XgrO8HQXPF0mD+HnZqSaeqP0J7AVothYBhMNSoNr/xtSg/I255GhzKxEQe+JRzdR/0t4nn5RvMG8JaPjjqu7ry/b9H3F0DhatW2ce8Hzg5249hhudP1EHj9AkomyjU7/8tOgjQSv2mlBbmu7ewS/ov0Vi4a0rTFinpAV7Arzl5zWkleFbeYy0RHfEDN1LlS0L+JfoW0qkGOplWNPqcbYH0JRRzKk5pJzRIphXNPocZjBvU9HyFdgSG48JB4y0+CLonnm8qTAmi2Xuf1ngtc0QFSpVzxpjmtTZ/JW6pIDgpCD8ojAE0oFjWSc7ZfAo0X2uYmaYQ2RrS8I4f52d+gzzBNQWHGjOmcIh2/knMkLRVdPOoGud92B62MIWBzkf5V+8QUastJB8/F2tx6gr1Vd+TjMcAIY/3wbAFMGxIQOtPf2KRD5o0vc9FAJx41ha+m6d2tgJNOYfGh7pO6X+bxjRtrXaIFo0m4dIx/6x0RO7PiLK2NYOT6VQZuHj3z0LGjYUNI9mBbGkaYAmY647S7oK/R2uhqc2qdlk6dAHHlcu/Le6vEZcPaoOqb+5bf9rvIDLj1FjrWIbapt4DKIb8BxiN3ENfwi3+sidNfBMYGJZPBloJOYnmfeRQM6bbT2oPxClhn3U7YoLvLkHV6150uXlN09rnS/o7+bbV3y761wjqPvjVNi3retF4v4LGpyfzLyiMG2k62Pr8nxCOFh0Xm3rk1/un6+t4oX6q5CJqAftguiND39N0oguaqtI+EdX1/kZ1SJWw2Ft25LtlLqle+reKQ0pE5wnnRd9C2+mO9wh589+RDSBsWv0a3b/TEWtnOFmLAmRNA9gHqCsaRnbeNzmeztLbSl/Qrfh90X+VnLjwPx3NZgv+behS4X/a7Juc/xr17mXftT7a3P+bkDmtCo80ze+r/y7kFq/7rzM83o6HzmeDWAUye0MPDuiN9tvDsug71BvS/wEJpuYAhYKLvQAAAABJRU5ErkJggg=="
+            alt="Avatar"
+            style="width: 120px; height: 100px"
+          />
+          <div>
+            <p>Basics about PostgreSQL</p>
+            <a href="cssform" class="reg2">Register</a>
+            <form action="/Cregister/cssLang" method="get">
+              <input
+                type="text"
+                style="display: none"
+                name="c"
+                value="cssLang"
+              />
+              <a href="Cregister/cssLang" class="reg">Registered students</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

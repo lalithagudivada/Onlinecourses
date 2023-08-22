@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+      .cascading-right {
+        margin-right: -50px;
+      }
+      body{
+       margin-left: 400px;
+       background-image: linear-gradient(
+          #abe9cd,
+          #95def4
+            /* #ee7724,
+          #f77c7e,
+          #ec84ac,
+          #b44593 */
+        );
+      
+      }
+      @media (max-width: 991.98px) {
+        .cascading-right {
+          margin-right: 0;
+        }
+        section{
+          border: solid rgb(208, 214, 121);
+        }
+
+      }
+     
+    </style>
+  </head>
+  <body>
+ 
+    
+    <section class="text-center text-lg-start">
+     
+      <div class="container py-4">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div
+              class="card cascading-right"
+              style="
+              margin-top: -100px;
+              /* background: hsla(205, 58%, 80%, 0.8); */
+              backdrop-filter: blur(30px);
+              ">
+              <div class="card-body p-5 shadow-5 text-center">
+                <h2 class="fw-bold mb-5">Sign up now</h2>
+                <form action="/signupdetails" method="get">
+               
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input
+                        name="studentname"
+                          type="text"
+                          id="form3Example1"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form3Example1"
+                          >First name</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input
+                        name="lastname"
+                          type="text"
+                          id="form3Example2"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form3Example2"
+                          >Last name</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+               
+                  <div class="form-outline mb-4">
+                    <input
+                    name="email"
+                      type="email"
+                      id="form3Example3"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form3Example3"
+                      >Email address</label
+                    >
+                  </div>
+
+                 
+                  <div class="form-outline mb-4">
+                    <input
+                    name="studentpass"
+                      type="password"
+                      id="form3Example4"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form3Example4"
+                  >Password</label
+                >
+                
+                    <div class="form-outline mb-4">
+                       <select name="year"  id="form3Example1"
+                      class="form-control">
+                        <option selected="selected" value="firstyear">I year</option>
+                        <option value="secondyear">II year</option>
+                        <option value="thirdyear">III year</option>
+                        <option value="fouryear">IV year</option>
+                       </select> 
+                      
+                      <!-- <input
+                        name="year"
+                          type="text"
+                          id="form3Example1"
+                          class="form-control"
+                        /> -->
+                        <label class="form-label" for="form3Example4"
+                        >Year</label
+                      >
+                    </div>
+                   
+                  
+                    <div class="form-outline mb-4">
+                      <select name="semester"  id="form3Example1"
+                      class="form-control">
+                        <option selected="selected" value="one">I </option>
+                        <option value="two">II </option>
+                       
+                       </select>
+                        <label class="form-label" for="form3Example4"
+                        >semester</label
+                      >
+                    </div>
+                   
+                  
+                    <div class="form-outline mb-4">
+                      <input
+                        name="regno"
+                          type="text"
+                          id="form3Example1"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form3Example4"
+                    >Register number</label
+                  >
+                    </div>
+                  
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Sign up
+                  </button>
+                  <div>
+                    Already have account? <a href="demo">Login</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+  </body>
+</html>

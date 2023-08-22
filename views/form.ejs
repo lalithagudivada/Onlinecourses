@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      .gradient-custom-2 {
+        /* fallback for old browsers */
+        background: #fccb90;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(
+          to right,
+          #abe9cd #34b8e0
+            /* #ee7724,
+          #d8363a,
+          #dd3675,
+          #b44593 */
+        );
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(
+          to right,
+          #abe9cd,
+          #95def4
+            /* #ee7724,
+          #d8363a,
+          #dd3675,
+          #b44593 */
+        );
+      }
+
+      @media (min-width: 500px) {
+        .gradient-form {
+          height: 100vh !important;
+        }
+      }
+      @media (min-width: 500px) {
+        .gradient-custom-2 {
+          border-top-right-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+        }
+      }
+      body {
+        margin-top: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form align="center" action="/courses" method="post" >
+      <input type="text" placeholder="name"/><br><br>
+      <input type="text" placeholder="password"/><br><br>
+    
+     <a href="courses"><button >login</button></a>
+     </form> -->
+    <section>
+      <!-- <div class="container py-5 h-100"> -->
+      <div class="row d-flex justify-content-center align-items-center h-60">
+        <div>
+          <div class="card text-black">
+            <div class="row lg-6">
+             
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+                  <div class="text-center">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                      style="width: 150px"
+                      alt="logo"
+                    />
+                  
+                    <h4 class="mt-1 mb-5 pb-1">Login Forhhhhm</h4>
+                    <form action="/demoo" method="get">
+                  </div>
+                  <!-- <form action="/formsubmit" method="get"> -->
+                    
+                    <p style="color: blue">Please login to your account</p>
+                    
+                    <label class="form-label" for="form2Example11"
+                      >Username</label
+                    >
+                   
+                    <div class="form-outline mb-4">
+                      
+                        
+                      <input
+                        name="studentname"
+                          type="text"
+                          id="form3Example1"
+                          class="form-control"
+                        />
+                    </div>
+                    <label class="form-label" for="form2Example22"
+                      >Password</label
+                    >
+                    <div class="form-outline mb-4">
+                      <input
+                      name="studentpass"
+                        type="password"
+                        id="form3Example4"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <!-- <a href="formsubmit"> -->
+                        <a href="demoo">
+                        <button
+                          class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                          type="button"
+                        >
+                          Log in
+                        </button></a
+                      ></form>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-3" style="color: black">
+                    Online Course Registration
+                  </h4>
+                  <h5 class="large mb-3" style="color: rgb(69, 60, 60)">
+                    The online course registration system is the central part of
+                    the educational administration system,
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
